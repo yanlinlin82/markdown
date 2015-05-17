@@ -1,0 +1,28 @@
+* { font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif,"SimSun"; }
+body { margin: 8px; font-size: 14px }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1 { font-size: 20px; margin: 20px 0; }
+h2 { font-size: 19px; margin: 30px 0 5px 0; }
+h3 { font-size: 18px; margin: 25px 0 5px 0; }
+h4 { font-size: 17px; margin: 20px 0 5px 0; }
+h5 { font-size: 16px; margin: 18px 0 5px 0; }
+h6 { font-size: 15px; margin: 16px 0 5px 0; }
+p { font-size: 14px; margin: 5px 0; text-indent: 2em; }
+li p { text-indent: 0; }
+nav { font-size: 13px; border: 1px solid #666; background-color: #eee }
+nav ul { margin: 0; padding: 10px; list-style-type: none; }
+nav li.level_1 { margin-left: 0px; }
+nav li.level_2 { margin-left: 10px; }
+nav li.level_3 { margin-left: 20px; }
+nav li.level_4 { margin-left: 30px; }
+nav li.level_5 { margin-left: 40px; }
+ul, ol, li { margin: 5px 0; font-size: 14px; }
+table { font-size: 13px; border-collapse: collapse; margin: auto; }
+table, th, td { border: 1px solid #666; }
+th, td { padding: 2px 8px; }
+th { background-color: #ddd; }
+td { background-color: #fff; }
+pre { background-color: #eee; border: 1px solid #666; margin: 10px 20px; padding: 10px; }
+pre, code { font-family: "Consolas","Bitstream Vera Sans Mono","Courier New",Courier,monospace; }
+pre, code { font-size: 13px; text-indent: 0 }
+code { margin: 0; padding: 0; }
