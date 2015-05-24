@@ -22,9 +22,8 @@ You may download via `git`:
 
 or download the file directly:
 
-    wget -N http://raw.githubusercontent.com/yanlinlin82/markdown/master/markdown
+    wget -N http://raw.githubusercontent.com/yanlinlin82/markdown/master/{markdown,default.css}
     chmod +x markdown
-    wget -N http://raw.githubusercontent.com/yanlinlin82/markdown/master/default.css
 
 Then add the directory to PATH environment variable.
 
@@ -44,3 +43,26 @@ Then add the directory to PATH environment variable.
         markdown foo.markdown foo.html
 
 ## Supported Syntax
+
+### Headers
+
+    # Level 1 Header
+    ## Level 2 Header
+    ### Level 3 Header
+    #### Level 4 Header
+    ##### Level 5 Header
+    ###### Level 6 Header
+    
+### Paragraphs and Lines
+
+### Emphasis
+
+### Lists
+
+### Code
+
+### Horizontal Lines
+
+### Links
+
+### Images
