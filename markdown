@@ -565,7 +565,7 @@ sub Markdown
 </section>
 ";
 		$toc;
-	}mex;
+	}mex if @section_titles;
 	$text = ExpandLinks($text);
 
 	$text =~ s{$escape_table{'*'}}{*}g;
