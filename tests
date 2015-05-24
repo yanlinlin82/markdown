@@ -1,0 +1,10 @@
+#!/usr/bin/perl -w
+use strict;
+use warnings;
+use Test::More tests => 3;
+
+sub Compact { my $s = shift; $s =~ s/\s*\n\s*//mg; $s; }
+
+is(Compact(Markdown("abc")), "<section><p>abc</p></section>");
+is(Compact(Markdown("123")), "<section><p>123</p></section>");
+is(Compact(Markdown("!@#")), "<section><p>!@#</p></section>");

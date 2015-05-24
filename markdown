@@ -600,6 +600,7 @@ Options:
    --disable-embedding             disable embedding css/js/image
    -v / --verbose                  show verbose messages
    -V / --version                  show version info
+   --test                          self testing (for debugging)
 
 ";
 	exit 1;
@@ -630,6 +631,10 @@ while (@ARGV) {
 		++$verbose;
 	} elsif ($opt eq "-V" or $opt eq "--version") {
 		print "$version\n";
+		exit 0;
+	} elsif ($opt eq "--test") {
+		unshift @INC, dirname($0);
+		require("tests") or die;
 		exit 0;
 	} elsif ($opt =~ /^-/) {
 		die "unexpected option '$opt'";
