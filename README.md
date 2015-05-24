@@ -2,9 +2,10 @@
 
 ## Overview
 
-This is a single perl script with minimal dependency to convert [Markdown][markdown] to [HTML5][html5].
+This is a single perl script with minimal dependency to convert [Markdown][markdown] to [HTML5][html5]. The script was inspired from [Daring Fireball's Markdown.pl][df_markdown] script.
 [markdown]:http://daringfireball.net/projects/markdown/
 [html5]:http://www.w3.org/TR/html5/
+[df_markdown]:http://daringfireball.net/projects/downloads/Markdown_1.0.1.zip
 
 ## Motivation
 
@@ -31,7 +32,12 @@ Then add the directory to PATH environment variable.
 
 ## Getting Start
 
-1. Write a markdown file, such as `foo.markdown`
+1. Write a markdown file (such as `foo.markdown`). Here goes an example:
+
+        cat > foo.markdown <<EOF
+        # Hello Example
+        Hello, **Markdown**!
+        EOF
 
 2. Run the script to convert to HTML:
 
