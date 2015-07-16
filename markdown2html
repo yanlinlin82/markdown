@@ -543,6 +543,17 @@ sub GetTOC
 	return $res;
 }
 
+sub YAML
+{
+	# TODO: parse YAML header
+	my $text = shift;
+	foreach my $line (split("\n", $text)) {
+		if ($line =~ /^title:\s*(.*)$/) {
+			$article_title = $1;
+		}
+	}
+}
+
 sub Markdown
 {
 	my $text = shift;
@@ -553,6 +564,12 @@ sub Markdown
 
 	# remove spaces in empty lines
 	$text =~ s/^[ \t]+$//mg;
+
+	# extract YAML header
+	if ($text =~ /\A---\n(.*?)\n---\n(.*)\z/sm) {
+		YAML($1);
+		$text = $2;
+	}
 
 	# <tab> => <space> x 4
 	$text =~ s{(.*?)\t}{$1.(' ' x (4 - length($1) % 4))}ge;
